@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import styled from 'styled-components';
+import styled from "styled-components"
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -27,6 +27,10 @@ const HeroFlexWrapper = styled.div`
   svg {
       width: 25vw;
       height: auto;
+      
+      g {
+        visibility: hidden;
+      }
     }
   
 `
@@ -39,6 +43,7 @@ const IndexPage = () => {
 
     const [svgElements] = svgWrapper.current.children;
 
+    const AllG = svgElements.querySelectorAll("#hero_graph g")
     const HtmlTag = svgElements.querySelector('#html-tag');
     const Laptop = svgElements.querySelector('#laptop');
     const MobilePhone = svgElements.querySelector('#mobile-phone');
@@ -46,7 +51,10 @@ const IndexPage = () => {
     const Protect = svgElements.querySelector('#protect');
     const Gear = svgElements.querySelector('#gear');
 
+
     gsap.set([HtmlTag, Laptop, MobilePhone, CurlyBraces, Protect, Gear], {autoAlpha: 0, ease: 'power3.inOut'});
+
+    gsap.to(AllG, {duration: 2, css: {visibility: 'visible'}});
 
     gsap.fromTo(CurlyBraces, {x: '-=100', autoAlpha: 0}, {delay: .8, duration: 1, x: '+=100', autoAlpha: 1});
     gsap.fromTo(Protect, {y: '-=100', autoAlpha: 0}, {delay: .3, duration: 1, y: '+=100', autoAlpha: 1});
