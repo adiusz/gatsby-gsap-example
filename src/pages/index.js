@@ -27,10 +27,8 @@ const HeroFlexWrapper = styled.div`
   svg {
       width: 25vw;
       height: auto;
-      
-      g {
-        visibility: hidden;
-      }
+      visibility: hidden;
+   
     }
   
 `
@@ -42,7 +40,7 @@ const IndexPage = () => {
   useEffect(() => {
 
     const [svgElements] = svgWrapper.current.children;
-
+    const svg = document.getElementById("hero_graph")
     const AllG = svgElements.querySelectorAll("#hero_graph g")
     const HtmlTag = svgElements.querySelector('#html-tag');
     const Laptop = svgElements.querySelector('#laptop');
@@ -54,7 +52,7 @@ const IndexPage = () => {
 
     gsap.set([HtmlTag, Laptop, MobilePhone, CurlyBraces, Protect, Gear], {autoAlpha: 0, ease: 'power3.inOut'});
 
-    gsap.to(AllG, {duration: 2, css: {visibility: 'visible'}});
+    gsap.to(svg, {duration: 0, css: {visibility: 'visible'}});
 
     gsap.fromTo(CurlyBraces, {x: '-=100', autoAlpha: 0}, {delay: .8, duration: 1, x: '+=100', autoAlpha: 1});
     gsap.fromTo(Protect, {y: '-=100', autoAlpha: 0}, {delay: .3, duration: 1, y: '+=100', autoAlpha: 1});

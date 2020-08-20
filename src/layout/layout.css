@@ -1,5 +1,7 @@
 
-
+#hero_graph{
+  visibility: hidden;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
