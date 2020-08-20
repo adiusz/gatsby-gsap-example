@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8318d22-c414-4e93-ab39-f01380267789" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/hero_graph.inline.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/hero_graph.inline.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" column="134" selection-start-line="2" selection-start-column="134" selection-end-line="2" selection-end-column="134" />
+              <first_editor relative-caret-position="51">
+                <caret line="3" column="134" selection-start-line="3" selection-start-column="134" selection-end-line="3" selection-end-column="134" />
               </first_editor>
               <second_editor />
             </state>
@@ -83,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="801">
-              <caret line="69" column="17" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="69" selection-end-column="17" />
+            <state relative-caret-position="376">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -293,15 +291,15 @@
       <workItem from="1597140916483" duration="13149000" />
       <workItem from="1597267429170" duration="5587000" />
       <workItem from="1597834035482" duration="6343000" />
-      <workItem from="1597918565182" duration="2645000" />
+      <workItem from="1597918565182" duration="3061000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60809000" />
+    <option name="totallyTimeSpent" value="61225000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="-180" width="1363" height="1080" extended-state="0" />
+    <frame x="-1920" y="-180" width="1363" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16404495" />
@@ -473,8 +471,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="134" selection-start-line="2" selection-start-column="134" selection-end-line="2" selection-end-column="134" />
+          <first_editor relative-caret-position="51">
+            <caret line="3" column="134" selection-start-line="3" selection-start-column="134" selection-end-line="3" selection-end-column="134" />
           </first_editor>
           <second_editor />
         </state>
@@ -525,8 +523,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="69" column="17" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="69" selection-end-column="17" />
+        <state relative-caret-position="376">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
