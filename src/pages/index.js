@@ -2,13 +2,15 @@ import React, { useEffect, useRef } from "react"
 import styled from "styled-components"
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
 
+import Icon from '../../static/speed.svg';
 import HeroTechSvg from '../../static/hero_graph.inline.svg';
 import SEO from "../components/seo"
 import Container from '../components/Container/Container'
 
 if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(DrawSVGPlugin, ScrollTrigger);
 }
 
 const HeroSection = styled.section`
@@ -19,12 +21,13 @@ const HeroSection = styled.section`
 
 const HeroFlexWrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  column-gap: 50px;
   justify-content: center;
   align-items: center;
   height: calc(90vh - 70px);
   
-  svg {
+  div:first-child svg {
       width: 25vw;
       height: auto;
       
@@ -32,7 +35,16 @@ const HeroFlexWrapper = styled.div`
         visibility: hidden;
       }
     }
-  
+`
+
+const StyledDiv = styled.div`
+     width: 50px;
+     height: auto;
+     
+     path {
+        stroke-width: 5px;
+        stroke: darkblue;
+      }
 `
 
 const IndexPage = () => {
@@ -51,6 +63,8 @@ const IndexPage = () => {
     const Protect = svgElements.querySelector('#protect');
     const Gear = svgElements.querySelector('#gear');
 
+    const Svg = document.querySelector('.svg svg g')
+    console.log(Svg);
 
     gsap.set([HtmlTag, Laptop, MobilePhone, CurlyBraces, Protect, Gear], {autoAlpha: 0, ease: 'power3.inOut'});
 
@@ -62,7 +76,12 @@ const IndexPage = () => {
     gsap.fromTo(MobilePhone, {x: '-=100', autoAlpha: 0}, {delay: 1.1, duration: 1, x: '+=100', autoAlpha: 1});
     gsap.fromTo(HtmlTag, {x: '+=100', autoAlpha: 0}, {delay: 1.6, duration: 1, x: '-=100', autoAlpha: 1});
     gsap.to(Laptop, {delay: .3, duration: 1.5, autoAlpha: 1});
+
+    gsap.to(Svg, {duration: 3, drawSVG: "20% 80%"})
+
   }, [])
+
+
 
   return (
   <>
@@ -73,6 +92,9 @@ const IndexPage = () => {
           <div ref={svgWrapper}>
             <HeroTechSvg />
           </div>
+          <StyledDiv className="svg">
+            <Icon/>
+          </StyledDiv>
         </HeroFlexWrapper>
       </Container>
     </HeroSection>

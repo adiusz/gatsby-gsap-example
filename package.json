@@ -24,7 +24,7 @@
     "gatsby-styled-components-dark-mode": "^1.3.0",
     "gatsby-theme-overreacted-toggle": "^1.0.2",
     "gatsby-transformer-sharp": "^2.5.12",
-    "gsap": "^3.4.2",
+    "gsap": "file:gsap-bonus.tgz",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
